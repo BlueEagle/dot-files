@@ -233,7 +233,8 @@ exec_always feh --bg-scale /usr/share/xfce4/backdrops/bartosova_aurora.jpg #/hom
 
 # Start programs
 exec --no-startup-id compton -f
-exec firefox
+#exec firefox
+exec w3m -title www.google.com
 exec thunderbird
 exec xfce4-terminal
 exec thunar #nautilus
