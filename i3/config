@@ -221,12 +221,12 @@ bindsym $mod+shift+t exec ~/.config/i3/toggletouchpad.sh # toggle touchpad
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play
-bindsym XF86AudioPause exec playerctl pause
+bindsym Control+7 exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Set wallpaper
-exec_always feh --bg-scale /usr/share/xfce4/backdrops/bartosova_aurora.jpg #/home/blue/Pictures/Wallpapers/Alt\ Reich/*
+exec_always feh --bg-scale /usr/share/xfce4/backdrops/bartosova_aurora.jpg
 
 # Position Displays
 #exec xrandr --output DP-1 --right-of VGA-0
@@ -247,7 +247,7 @@ assign [class="Atom"] $workspace3
 assign [class="Steam"] $workspace7
 assign [class="Thunar"] $workspace8
 assign [class="Thunderbird"] $workspace9
-
+assign [class="Spotify"] $workspace10
 
 # My screens: left VGA-0, right DP-1
 # Workspace Assignments
