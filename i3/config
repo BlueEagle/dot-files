@@ -205,7 +205,10 @@ bar {
 }
 
 # BIND Mod + Shift + l to lock screen
-bindsym $mod+shift+l exec i3lock --color "$bg-color"
+bindsym $mod+shift+l exec "/home/blue/Scripts/lockscreenshot.sh"
+
+# BIND Mod + Shift + k for testing
+#bindsym $mod+shift+k exec "/home/blue/Scripts/lockscreenshot.sh"
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
@@ -234,15 +237,15 @@ exec_always feh --bg-scale /usr/share/xfce4/backdrops/bartosova_aurora.jpg
 # Start programs
 exec --no-startup-id compton -f
 #exec firefox
-exec w3m -title www.google.com
+#exec w3m -title www.google.com
 exec thunderbird
-exec xfce4-terminal
+#exec --no-startup-id i3-msg 'Terminal ; exec xfce4-terminal; 1: Web ;'
 exec thunar #nautilus
 
 # xprop for class finding
 # Program Assignments
-assign [class="Firefox"] $workspace1
-assign [class="Xfce4-terminal"] $workspace2
+#assign [class="Firefox"] $workspace1
+#assign [class="Xfce4-terminal"] $workspace2
 assign [class="Atom"] $workspace3
 assign [class="Steam"] $workspace7
 assign [class="Thunar"] $workspace8
